@@ -2,7 +2,7 @@
 
 const solc = require('solc');
 const fs = require('fs');
-const path = "./artifacts/Storage.json";
+const path = './artifacts/Storage.json';
 
 const Storage = fs.readFileSync('./contracts/Storage.sol').toString();
 

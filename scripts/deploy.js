@@ -1,7 +1,7 @@
 // truffle deploy
-
+require('dotenv').config({path: './.env'});
 const {abi, bytecode} = require('../artifacts/Storage.json');
-const provider = "http://127.0.0.1:7545";
+const provider = process.env.PROVIDER;
 const Web3 = require('web3');
 
 const web3 = new Web3(provider);
